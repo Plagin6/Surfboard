@@ -145,7 +145,7 @@ img {
   border-radius: 10px; }
 
 .hero {
-  background: url("../../img/arnaud-mesureur.png") center top no-repeat;
+  background: url("../img/arnaud-mesureur.png") center top no-repeat;
   background-color: #313131;
   background-size: cover;
   color: #fff;
@@ -283,7 +283,7 @@ img {
       margin-bottom: 1.8333333333rem; } }
 
 .order__section {
-  background: url("../../img/serfer.jpg") center top no-repeat;
+  background: url("../img/serfer.jpg") center top no-repeat;
   position: relative; }
   .order__section:before {
     content: "";
@@ -332,7 +332,7 @@ img {
       padding: 0;
       margin-bottom: 2.555556rem; } }
   .benefits__item:before {
-    content: url("../../img/icon/Combined.svg");
+    content: url("../img/icon/Combined.svg");
     position: absolute;
     top: 2.7777777778rem;
     right: 0;
@@ -551,7 +551,7 @@ img {
   .radio--checkbox .radio__visible {
     border-radius: 0.2222222222rem; }
     .radio--checkbox .radio__visible:before {
-      background: url("../../img/icon/checkmark.svg") center center no-repeat; }
+      background: url("../img/icon/checkmark.svg") center center no-repeat; }
   .radio__title {
     padding-left: 0.5555555556rem;
     padding-right: 0.5555555556rem; }

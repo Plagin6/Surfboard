@@ -1,0 +1,38 @@
+.btn {
+    font-size: rem(16px);
+    font-weight: 800;
+    padding: rem(22px) rem(42px);
+    text-transform: uppercase;
+    border-radius: rem(100px);
+    line-height: 1;
+    background: #FEDB3F;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+
+    @include tablets {
+        font-size: 0.988889rem;
+    }
+
+    @include phones {
+        font-size: 1.2em;
+        margin-top: 0.7rem;
+    }
+
+    &:hover {
+        background: #FFD517;
+    }
+
+    &--theme--transparent {
+        background: transparent;
+        color: #fff;
+        text-transform: none;
+
+        &:hover {
+            background: transparent;
+            color: #000;
+        }
+    }
+}
+

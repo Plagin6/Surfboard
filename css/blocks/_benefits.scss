@@ -1,0 +1,47 @@
+.benefits {
+    display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.benefits__item {
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+
+    @include phones {
+        padding: 0;
+        margin-bottom: 2.555556rem;
+    }
+
+    &:before {
+        content: url("../../img/icon/Combined.svg");
+        position: absolute;
+        top: rem(50px);
+        right: 0;
+        transform: translateX(50%);
+
+        @include phones {
+            display: none;
+        }
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-left: 3%;
+        padding-right: 0;
+
+        @include phones {
+            padding-left: 0;
+        }
+
+        &:before {
+            display: none;
+        }
+    }
+}

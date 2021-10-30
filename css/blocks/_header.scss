@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include tablets {
+        background-color: #1968B1;
+        padding: 23px 26px 23px 26px;
+        margin-right: -38px;
+        align-items: center;
+    }
+
+    @include phones {
+        padding: 23px 26px 23px 12px;
+    }
+}
+
+.phone-number.header__phone-number {
+    @include tablets {
+        display: none;
+    }
+}

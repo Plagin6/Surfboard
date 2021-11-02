@@ -13,6 +13,10 @@
     @include phones {
         padding: 23px 26px 23px 12px;
     }
+
+    @include iphone5 {
+        padding: 23px 35px 23px 12px;
+    }
 }
 
 .phone-number.header__phone-number {

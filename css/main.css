@@ -8,6 +8,9 @@ html {
   @media screen and (max-width: 480px) {
     html {
       font-size: 16px; } }
+  @media screen and (max-width: 320px) {
+    html {
+      font-size: 13px; } }
 
 html,
 body {
@@ -82,6 +85,9 @@ img {
   @media screen and (max-width: 480px) {
     .header {
       padding: 23px 26px 23px 12px; } }
+  @media screen and (max-width: 320px) {
+    .header {
+      padding: 23px 35px 23px 12px; } }
 
 @media screen and (max-width: 768px) {
   .phone-number.header__phone-number {
@@ -151,7 +157,7 @@ img {
   border-radius: 10px; }
 
 .hero {
-  background: url("../../img/arnaud-mesureur.png") center top no-repeat;
+  background: url("../img/arnaud-mesureur.png") center top no-repeat;
   background-color: #313131;
   background-size: cover;
   color: #fff;
@@ -211,6 +217,9 @@ img {
       padding: 0;
       font-size: 2.466667rem;
       line-height: 2.622222rem; } }
+  @media screen and (max-width: 320px) {
+    .hero__main-title {
+      font-size: 1.766667rem; } }
 
 .hero__title-desc {
   font-size: 1.1666666667rem;
@@ -287,9 +296,12 @@ img {
   @media screen and (max-width: 768px) {
     .section__title {
       margin-bottom: 1.8333333333rem; } }
+  @media screen and (max-width: 320px) {
+    .section__title {
+      font-size: 2rem; } }
 
 .order-section {
-  background: url("../../img/serfer.jpg") center top no-repeat;
+  background: url("../img/serfer.jpg") center top no-repeat;
   background-size: cover;
   position: relative; }
   .order-section:before {
@@ -302,7 +314,7 @@ img {
     background-color: rgba(41, 41, 41, 0.4); }
 
 .map-section {
-  background: url("../../img/map.png") center top no-repeat;
+  background: url("../img/map.png") center top no-repeat;
   background-size: cover; }
 
 .headline {
@@ -316,6 +328,9 @@ img {
       color: #000;
       font-size: 40px;
       margin-bottom: 0; } }
+  @media screen and (max-width: 320px) {
+    .headline__title {
+      font-size: 28px; } }
 
 .headline__subtitle {
   padding: 0 30%;
@@ -343,7 +358,7 @@ img {
       padding: 0;
       margin-bottom: 2.555556rem; } }
   .benefits__item:before {
-    content: url("../../img/icon/Combined.svg");
+    content: url("../img/icon/Combined.svg");
     position: absolute;
     top: 2.7777777778rem;
     right: 0;
@@ -395,6 +410,9 @@ img {
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 1.1111111111rem; }
+  @media screen and (max-width: 320px) {
+    .benefit__title {
+      margin-bottom: 0.1rem; } }
 
 .benefit__image {
   margin-bottom: 0.5555555556rem; }
@@ -529,7 +547,10 @@ img {
         width: 28.888889rem; } }
     @media screen and (max-width: 480px) {
       .form__input--textarea {
-        width: 28.488889rem; } }
+        width: 100%; } }
+    @media screen and (max-width: 320px) {
+      .form__input--textarea {
+        width: 100%; } }
   .form__input:focus {
     border-color: #FEDB3F;
     outline: none; }
@@ -562,7 +583,7 @@ img {
   .radio--checkbox .radio__visible {
     border-radius: 0.2222222222rem; }
     .radio--checkbox .radio__visible:before {
-      background: url("../../img/icon/checkmark.svg") center center no-repeat; }
+      background: url("../img/icon/checkmark.svg") center center no-repeat; }
   .radio__title {
     padding-left: 0.5555555556rem;
     padding-right: 0.5555555556rem; }

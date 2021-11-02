@@ -25,10 +25,14 @@
     @include tablets {
         margin-bottom: rem(33px);
     }
+
+    @include iphone5 {
+        font-size: 2rem;
+    }
 }
 
 .order-section {
-    background: url("../../img/serfer.jpg") center top no-repeat;
+    background: url("../img/serfer.jpg") center top no-repeat;
     background-size: cover;
     position: relative;
 
@@ -44,6 +48,6 @@
 }
 
 .map-section {
-    background: url("../../img/map.png") center top no-repeat;
+    background: url("../img/map.png") center top no-repeat;
     background-size: cover;
 }

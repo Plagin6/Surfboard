@@ -59,7 +59,11 @@
         }
 
         @include phones {
-            width: 28.488889rem;
+            width: 100%;
+        }
+
+        @include iphone5 {
+            width: 100%;
         }
     }
 

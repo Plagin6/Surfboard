@@ -37,6 +37,10 @@
     font-weight: bold;
     font-size: rem(27px);
     margin-bottom: rem(20px);
+
+    @include iphone5 {
+        margin-bottom: 0.1rem;
+    }
 }
 
 .benefit__image {

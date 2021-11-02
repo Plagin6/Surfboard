@@ -1,5 +1,5 @@
 .hero {
-    background: url("../../img/arnaud-mesureur.png") center top no-repeat;
+    background: url("../img/arnaud-mesureur.png") center top no-repeat;
     background-color: #313131;
     background-size: cover;
     color: #fff;
@@ -72,7 +72,10 @@
         font-size: 2.466667rem;
         line-height: 2.622222rem;
     }
-}
+
+    @include iphone5 {
+        font-size: 1.766667rem;
+}   }
 
 .hero__title-desc {
     font-size: rem(21px);

@@ -7,6 +7,7 @@ $z-fixed-menu: 100;
 // breakpoints
 $tablets: 768px;
 $phones: 480px;
+$iphone5: 320px;
 
 // setups
 @import "media.scss";
@@ -31,6 +32,8 @@ $phones: 480px;
 @import "./blocks/_fixed-menu.scss";
 @import "./blocks/_footer.scss";
 @import "./blocks/_contacts.scss";
+@import "./blocks/_socials.scss";
+@import "./blocks/_icon.scss";
 
 // нормалайз
 @import url("normalize.css");

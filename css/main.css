@@ -115,6 +115,9 @@ img {
   text-decoration: none;
   display: flex;
   align-items: center; }
+  @media screen and (max-width: 480px) {
+    .phone-number {
+      font-size: 1.4222222222rem; } }
 
 .phone-number__icon {
   flex-shrink: 0; }
@@ -126,6 +129,9 @@ img {
 
 .phone-number__text {
   white-space: nowrap; }
+
+.phone-number__img {
+  margin-right: 7px; }
 
 .hamburger {
   width: 28px;
@@ -145,7 +151,7 @@ img {
   border-radius: 10px; }
 
 .hero {
-  background: url("../img/arnaud-mesureur.png") center top no-repeat;
+  background: url("../../img/arnaud-mesureur.png") center top no-repeat;
   background-color: #313131;
   background-size: cover;
   color: #fff;
@@ -282,10 +288,11 @@ img {
     .section__title {
       margin-bottom: 1.8333333333rem; } }
 
-.order__section {
-  background: url("../img/serfer.jpg") center top no-repeat;
+.order-section {
+  background: url("../../img/serfer.jpg") center top no-repeat;
+  background-size: cover;
   position: relative; }
-  .order__section:before {
+  .order-section:before {
     content: "";
     position: absolute;
     top: 0;
@@ -293,6 +300,10 @@ img {
     right: 0;
     bottom: 0;
     background-color: rgba(41, 41, 41, 0.4); }
+
+.map-section {
+  background: url("../../img/map.png") center top no-repeat;
+  background-size: cover; }
 
 .headline {
   text-align: center; }
@@ -332,7 +343,7 @@ img {
       padding: 0;
       margin-bottom: 2.555556rem; } }
   .benefits__item:before {
-    content: url("../img/icon/Combined.svg");
+    content: url("../../img/icon/Combined.svg");
     position: absolute;
     top: 2.7777777778rem;
     right: 0;
@@ -551,7 +562,7 @@ img {
   .radio--checkbox .radio__visible {
     border-radius: 0.2222222222rem; }
     .radio--checkbox .radio__visible:before {
-      background: url("../img/icon/checkmark.svg") center center no-repeat; }
+      background: url("../../img/icon/checkmark.svg") center center no-repeat; }
   .radio__title {
     padding-left: 0.5555555556rem;
     padding-right: 0.5555555556rem; }
@@ -623,13 +634,19 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1.2777777778rem 0;
+  padding: 0.877778rem 0;
   background: #fff; }
+  @media screen and (max-width: 768px) {
+    .footer {
+      padding: 1.877778rem 1rem; } }
+  @media screen and (max-width: 480px) {
+    .footer {
+      padding: 1rem 0; } }
 
 .footer__container {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: space-between;
+  max-width: 1700px; }
   @media screen and (max-width: 480px) {
     .footer__container {
       flex-direction: column; } }
@@ -640,12 +657,36 @@ img {
   color: #010101; }
   @media screen and (max-width: 480px) {
     .contacts {
-      margin-bottom: 10px;
       display: flex;
       flex-direction: column;
-      align-items: center; } }
+      align-items: center;
+      font-size: 1.4222222222rem; } }
 
 .contacts__phone {
   color: #292929; }
+
+.socials {
+  display: flex;
+  justify-content: flex-end; }
+  @media screen and (max-width: 480px) {
+    .socials {
+      justify-content: center; } }
+
+.socials__icon {
+  width: 1.4rem;
+  height: 3rem;
+  margin-right: 1rem; }
+  .socials__icon:last-child {
+    margin-right: 0; }
+
+.icon {
+  width: 1.4rem;
+  height: 3rem;
+  margin-right: 1rem;
+  fill: #B3B3B3; }
+  .icon:hover {
+    fill: #292929; }
+  .icon:last-child {
+    margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */

@@ -27,8 +27,9 @@
     }
 }
 
-.order__section {
+.order-section {
     background: url("../../img/serfer.jpg") center top no-repeat;
+    background-size: cover;
     position: relative;
 
     &:before {
@@ -40,4 +41,9 @@
         bottom: 0;
         background-color: rgba(41, 41, 41, .4);
     }
+}
+
+.map-section {
+    background: url("../../img/map.png") center top no-repeat;
+    background-size: cover;
 }

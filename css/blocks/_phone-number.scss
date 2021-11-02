@@ -3,6 +3,10 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+
+    @include phones {
+        font-size: 1.4222222222rem;
+    }
 }
 
 .phone-number__icon {
@@ -17,4 +21,8 @@
 
 .phone-number__text {
     white-space: nowrap;
+}
+
+.phone-number__img {
+    margin-right: 7px;
 }

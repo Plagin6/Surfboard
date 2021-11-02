@@ -1,0 +1,14 @@
+.icon {
+    width: 1.4rem;
+    height: 3rem;
+    margin-right: 1rem;
+    fill: #B3B3B3;
+
+    &:hover {
+        fill: #292929;;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

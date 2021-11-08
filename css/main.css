@@ -454,7 +454,48 @@ img {
     margin: 0 7%; }
 
 .product__ingredients {
-  position: relative; }
+  position: relative;
+  display: inline-block; }
+
+.product__ingredients:hover .product__ingredients--dropdown {
+  display: block; }
+
+.product__ingredients--dropdown {
+  position: absolute;
+  background: rgba(238, 235, 235, 0.8);
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(7px);
+  padding: 1rem;
+  width: 273px;
+  height: 291px;
+  top: 0%;
+  left: 100%;
+  border-radius: 0.4rem;
+  display: none;
+  color: #000; }
+
+.product__ingredients--item {
+  display: flex;
+  padding-bottom: 1.3rem;
+  align-items: center;
+  font-size: 16px; }
+  .product__ingredients--item--img {
+    margin-right: 6%; }
+  .product__ingredients--item--text1 {
+    margin-right: 24%;
+    font-weight: 600; }
+  .product__ingredients--item--text2 {
+    margin-right: 17%;
+    font-weight: 600; }
+  .product__ingredients--item--text3 {
+    margin-right: 44%;
+    font-weight: 600; }
+  .product__ingredients--item--text4 {
+    margin-right: 31%;
+    font-weight: 600; }
+  .product__ingredients--item--text5 {
+    margin-right: 56%;
+    font-weight: 600; }
 
 .product__ingredients-back {
   background: #3A587E;

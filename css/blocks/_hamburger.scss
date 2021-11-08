@@ -9,6 +9,11 @@
     @include tablets {
         display: inline-flex;
     }
+
+    @include iphone5 {
+        width: 10%;
+        height: 69%;
+    }
 }
 
 .hamburger__plank {

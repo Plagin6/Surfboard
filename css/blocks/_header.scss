@@ -6,16 +6,24 @@
     @include tablets {
         background-color: #1968B1;
         padding: 23px 26px 23px 26px;
-        margin-right: -38px;
+        margin-right: -22px;
+        margin-left: rem(-20px);
         align-items: center;
     }
 
     @include phones {
-        padding: 23px 26px 23px 12px;
+        padding: 23px 26px 23px 18px;
+        margin-left: -12px;
     }
 
     @include iphone5 {
-        padding: 23px 35px 23px 12px;
+        padding: 13px 23px 13px 12px;
+    }
+}
+
+.logo {
+    @include iphone5 {
+        width: 15%;
     }
 }
 

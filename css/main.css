@@ -63,6 +63,7 @@ footer {
   width: 100%; }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 a {
@@ -91,6 +92,12 @@ img {
     .header {
       padding: 13px 23px 13px 12px; } }
 
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 10%; } }
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 14%; } }
 @media screen and (max-width: 320px) {
   .logo {
     width: 15%; } }
@@ -154,7 +161,13 @@ img {
   display: none; }
   @media screen and (max-width: 768px) {
     .hamburger {
-      display: inline-flex; } }
+      display: inline-flex;
+      width: 6%;
+      height: 64%; } }
+  @media screen and (max-width: 480px) {
+    .hamburger {
+      width: 9%;
+      height: 64%; } }
   @media screen and (max-width: 320px) {
     .hamburger {
       width: 10%;
@@ -165,6 +178,15 @@ img {
   background: #fff;
   height: 4px;
   border-radius: 10px; }
+  @media screen and (max-width: 768px) {
+    .hamburger__plank {
+      height: 19%; } }
+  @media screen and (max-width: 480px) {
+    .hamburger__plank {
+      height: 16%; } }
+  @media screen and (max-width: 320px) {
+    .hamburger__plank {
+      height: 18%; } }
 
 .hero {
   background: url("../img/arnaud-mesureur.png") center top no-repeat;
@@ -932,5 +954,71 @@ img {
     fill: #292929; }
   .icon:last-child {
     margin-right: 0; }
+
+.fullscreen-menu.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #333537;
+  z-index: 1000;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.menu {
+  margin: 0 30px;
+  padding-top: 5px; }
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none; } }
+
+.menu--vertical {
+  font-size: 36px;
+  color: #fff;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .menu--vertical {
+      display: block; } }
+
+.menu--vertical .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.menu__link {
+  text-decoration: none;
+  white-space: nowrap; }
 
 /*# sourceMappingURL=main.css.map */

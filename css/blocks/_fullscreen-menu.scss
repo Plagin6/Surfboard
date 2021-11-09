@@ -1,0 +1,74 @@
+.fullscreen-menu.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #333537;
+    z-index: 1000;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.menu {
+    margin: 0 30px;
+    padding-top: 5px;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu--vertical {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+
+    @include tablets {
+        display: block;
+    }
+}
+
+.menu--vertical .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.menu__link {
+    text-decoration: none;
+    white-space: nowrap;
+}

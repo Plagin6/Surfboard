@@ -22,6 +22,14 @@
 }
 
 .logo {
+    @include tablets {
+        width: 10%;
+    }
+
+    @include phones {
+        width: 14%;
+    }
+
     @include iphone5 {
         width: 15%;
     }

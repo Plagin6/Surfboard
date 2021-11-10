@@ -958,7 +958,7 @@ img {
 .fullscreen-menu.active {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: none; }
 
 .fullscreen-menu {
   position: fixed;

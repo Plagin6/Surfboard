@@ -1,10 +1,10 @@
-let button = document.querySelector('.hamburger');
+let button = document.querySelector('#toggle');
 let menu = document.querySelector('.menu');
 let body = document.querySelector('body');
-let _hamburgerMenu = function (e) {
-    button.classList.hamburger('button_container--active');
-    menu.classList.hamburger('menu--open');
-    body.classList.hamburger('body-active-menu');
+let _toggleMenu = function (e) {
+    button.classList.toggle('button_container--active');
+    menu.classList.toggle('active');
+    body.classList.toggle('body-active-menu');
 }
 
-button.addEventListener('click', _hamburgerMenu)
+button.addEventListener('click', _toggleMenu)

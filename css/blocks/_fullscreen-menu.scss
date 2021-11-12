@@ -19,10 +19,28 @@
     overflow: hidden;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    display: inline-flex;
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+}
+
+.fullscreen-menu__close {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: -7%;
+    width: 8rem;
+    cursor: pointer;
+
+    @include phones {
+        right: -12%;
+    }
+
+    @include iphone5 {
+        right: -16%;
+    }
 }
 
 .menu {
@@ -41,6 +59,10 @@
 
     @include tablets {
         display: block;
+    }
+
+    @include iphone5 {
+        font-size: 26px;
     }
 }
 

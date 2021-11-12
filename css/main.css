@@ -975,10 +975,25 @@ img {
   overflow: hidden;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  display: inline-flex;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+
+.fullscreen-menu__close {
+  display: block;
+  position: absolute;
+  top: 5%;
+  right: -7%;
+  width: 8rem;
+  cursor: pointer; }
+  @media screen and (max-width: 480px) {
+    .fullscreen-menu__close {
+      right: -12%; } }
+  @media screen and (max-width: 320px) {
+    .fullscreen-menu__close {
+      right: -16%; } }
 
 .menu {
   margin: 0 30px;
@@ -994,6 +1009,9 @@ img {
   @media screen and (max-width: 768px) {
     .menu--vertical {
       display: block; } }
+  @media screen and (max-width: 320px) {
+    .menu--vertical {
+      font-size: 26px; } }
 
 .menu--vertical .menu__list {
   display: -webkit-box;

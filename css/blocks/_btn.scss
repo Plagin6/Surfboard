@@ -10,6 +10,7 @@
     text-decoration: none;
     display: inline-block;
     border: none;
+    cursor: pointer;
 
     @include tablets {
         font-size: 0.988889rem;

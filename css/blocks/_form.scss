@@ -73,6 +73,14 @@
     }
 }
 
+.input-error {
+    border-color: rgb(240, 57, 57);
+}
+
+.form__input.input-error {
+    border-color: rgb(240, 57, 57);
+}
+
 .form__controls {
     display: flex;
     flex-wrap: wrap;

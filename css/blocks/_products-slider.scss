@@ -1,21 +1,25 @@
 .products-slider {
-    margin-bottom: 10%;
+    position: relative;
 
-    @include phones {
-        margin-bottom: 0;
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
     }
 }
 
 .products-slider__arrow--direction--prev,
 .products-slider__arrow--direction--next {
+    display: block;
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     margin-top: -22px;
+    z-index: 10;
 
     @include tablets {
-        top: 32%;
+        top: 50%;
         margin-top: 0;
         margin-left: 5rem;
     }
@@ -59,11 +63,15 @@
         }
 
         @include phones {
-            margin-bottom: 2rem;
+            max-width: 25rem;
+            margin-top: 5rem;
         }
 
         @include iphone5 {
             background-image: none;
+            max-width: 15rem;
+            margin-top: 5rem;
+            margin-bottom: 1rem;
         }
 
         &--position {
@@ -77,12 +85,12 @@
             }
 
             @include phones {
-                left: 39%;
-                max-width: 25%;
+                left: 8%;
+                width: 90%;
             }
 
             @include iphone5 {
-                left: 42%;
+                left: 0;
                 max-width: 16%;
             }
         }
@@ -213,6 +221,8 @@
 
     @include iphone5 {
         font-size: rem(18px);
+        margin: 0 35%;
+        margin-bottom: 1rem;
     }
 }
 

@@ -29,17 +29,18 @@
 .fullscreen-menu__close {
     display: block;
     position: absolute;
-    top: 5%;
-    right: -7%;
-    width: 8rem;
+    top: 4%;
+    right: -5%;
+    width: 6rem;
     cursor: pointer;
 
     @include phones {
-        right: -12%;
+        right: -9%;
     }
 
     @include iphone5 {
-        right: -16%;
+        right: -12%;
+        top: 4%;
     }
 }
 

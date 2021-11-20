@@ -56,41 +56,44 @@
         align-items: center;
         background-image: url("../img/slider/bkgforboard.svg");
         background-repeat: no-repeat;
+        background-size: contain;
         background-position: 100% 57%;
+        max-width: 23rem;
+        margin-left: 6%;
 
         @include tablets {
             background-position: 50% 50%;
+            width: 60%;
         }
 
         @include phones {
-            max-width: 25rem;
             margin-top: 5rem;
+            width: 75%;
         }
 
         @include iphone5 {
-            background-image: none;
             max-width: 15rem;
-            margin-top: 5rem;
+            margin-top: 4rem;
             margin-bottom: 1rem;
         }
 
         &--position {
             position: relative;
-            top: -3%;
-            left: 19%;
+            top: -1%;
+            left: 4%;
 
             @include tablets {
                 top: 0;
-                left: 35%;
+                left: 0;
             }
 
             @include phones {
-                left: 8%;
-                width: 90%;
+                left: 2%;
+                width: 100%;
             }
 
             @include iphone5 {
-                left: 0;
+                left: 2%;
                 max-width: 16%;
             }
         }

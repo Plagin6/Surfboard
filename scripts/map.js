@@ -11,7 +11,8 @@
 
         const coords = [
             [55.747616, 37.599121],
-            [55.761958, 37.613692]
+            [55.761958, 37.613692],
+            [55.741804, 37.623968]
         ];
 
         const myCollection = new ymaps.GeoObjectCollection({}, {
@@ -26,7 +27,7 @@
             myCollection.add(new ymaps.Placemark(coord));
         });
 
-        myMap.geoObject.add(myCollection);ы
+        myMap.geoObjects.add(myCollection);
 
         myMap.behaviors.disable('scrollZoom');
     }

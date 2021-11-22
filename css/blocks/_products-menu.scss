@@ -1,0 +1,74 @@
+.products-menu-section {
+    background: url("../img/accordion/surfer2.jpg") center center/cover no-repeat;
+    position: relative;
+    color: #fff;
+
+    &__title {
+        color: #fff;
+        margin-bottom: 34rem;
+        margin-right: 60rem;
+
+        @include tablets {
+            margin-bottom: 46rem;
+            margin-right: 32rem;
+        }
+
+        @include phones {
+            margin-bottom: 38rem;
+            margin-right: 20rem;
+        }
+    }
+}
+
+.products-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+
+    &__item {
+        display: flex;
+    }
+
+    &__title {
+        position: relative;
+        width: rem(100px);
+        text-decoration: none;
+    }
+
+    &__image {
+        height: 100%;
+    }
+
+    &__text {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 58px;
+        transform: rotate(-90deg);
+        text-decoration: none;
+        margin: -8rem 0;
+    }
+
+    &__content {
+        background: rgba(47, 50, 52, 0.9);
+        width: 0;
+        position: relative;
+        overflow: hidden;
+        transition: width .7s;
+    }
+
+    &__container {
+        padding: 40px 73px 45px 26px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__close {
+        border: none;
+        background: bottom;
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

@@ -1,12 +1,16 @@
 .fixed-menu {
     position: fixed;
     top: 20%;
-    right: 14%;
+    right: 6%;
     z-index: $z-fixed-menu;
 
     @include tablets {
         display: none;
     }
+}
+
+.fixed-menu--shadowed {
+    color: #000;
 }
 
 .fixed-menu__item {
@@ -17,6 +21,10 @@
             border-color: #fff;
         }
     }
+}
+
+.fixed-menu__link:hover {
+    border-color: #fff;
 }
 
 .fixed-menu__link {

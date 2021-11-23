@@ -1,65 +1,69 @@
-const mesureWidth =  item => {
-    let reqItemWidth = 0;
+(function () {
 
-    const screenWidth = $(window).width();
-    const container = item.closest(".products-menu");
-    const titlesBlocks = container.find(".products-menu__title");
-    const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
+    const mesureWidth = item => {
+        let reqItemWidth = 0;
 
-    const textContainer = item.find(".products-menu__container");
-    const paddingLeft = parseInt(textContainer.css("padding-left"));
-    const paddingRight = parseInt(textContainer.css("padding-right"));
+        const screenWidth = $(window).width();
+        const container = item.closest(".products-menu");
+        const titlesBlocks = container.find(".products-menu__title");
+        const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
 
-    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+        const textContainer = item.find(".products-menu__container");
+        const paddingLeft = parseInt(textContainer.css("padding-left"));
+        const paddingRight = parseInt(textContainer.css("padding-right"));
 
-    if (isMobile) {
-        reqItemWidth = screenWidth - titlesWidth;
-    } else {
-        reqItemWidth = 500;
-    }
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-    return {
-        container: reqItemWidth,
-        textContainer: reqItemWidth - paddingRight - paddingLeft
-    }
-};
+        if (isMobile) {
+            reqItemWidth = screenWidth - titlesWidth;
+        } else {
+            reqItemWidth = 500;
+        }
 
-const closeEveryItemInContainer = (container) => {
-    const items = container.find(".products-menu__item");
-    const content = container.find(".products-menu__content");
+        return {
+            container: reqItemWidth,
+            textContainer: reqItemWidth - paddingRight - paddingLeft
+        }
+    };
 
-    items.removeClass("active");
-    content.width(0);
-};
+    const closeEveryItemInContainer = (container) => {
+        const items = container.find(".products-menu__item");
+        const content = container.find(".products-menu__content");
 
-const openItem = (item) => {
-    const hiddenContent = item.find(".products-menu__content");
-    const reqWidth = mesureWidth(item);
-    const textBlock = item.find(".products-menu__container");
+        items.removeClass("active");
+        content.width(0);
+    };
 
-    item.addClass("active");
-    hiddenContent.width(reqWidth.container);
-    textBlock.width(reqWidth.textContainer);
-};
+    const openItem = (item) => {
+        const hiddenContent = item.find(".products-menu__content");
+        const reqWidth = mesureWidth(item);
+        const textBlock = item.find(".products-menu__container");
 
-$(".products-menu__title").on("click", (e) => {
-    e.preventDefault();
+        item.addClass("active");
+        hiddenContent.width(reqWidth.container);
+        textBlock.width(reqWidth.textContainer);
+    };
 
-    const $this = $(e.currentTarget);
-    const item = $this.closest(".products-menu__item");
-    const itemOpened = item.hasClass("active");
-    const container = $this.closest(".products-menu");
+    $(".products-menu__title").on("click", (e) => {
+        e.preventDefault();
 
-    if (itemOpened) {
-        closeEveryItemInContainer(container);
-    } else {
-        closeEveryItemInContainer(container);
-        openItem(item);
-    }
-});
+        const $this = $(e.currentTarget);
+        const item = $this.closest(".products-menu__item");
+        const itemOpened = item.hasClass("active");
+        const container = $this.closest(".products-menu");
 
-$(".products-menu__close").on("click", e => {
-    e.preventDefault();
+        if (itemOpened) {
+            closeEveryItemInContainer(container);
+        } else {
+            closeEveryItemInContainer(container);
+            openItem(item);
+        }
+    });
 
-    closeEveryItemInContainer($(".products-menu"));
-});
+    $(".products-menu__close").on("click", e => {
+        e.preventDefault();
+
+        closeEveryItemInContainer($(".products-menu"));
+    });
+
+}());

@@ -4,6 +4,7 @@
     background-size: cover;
     color: #fff;
     position: relative;
+    height: 100%;
 
     @include tablets {
         background-position: center right 19%;

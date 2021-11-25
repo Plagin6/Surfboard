@@ -73,9 +73,14 @@
         line-height: 2.622222rem;
     }
 
+    @include iphoneX {
+        font-size: 2.166667rem;
+    }
+
     @include iphone5 {
         font-size: 1.766667rem;
-}   }
+    }
+}
 
 .hero__title-desc {
     font-size: rem(21px);

@@ -208,6 +208,7 @@
 .product__content {
     margin-bottom: 1.5rem;
     margin-right: 22%;
+    color: #000;
 
     @include tablets {
         margin-bottom: 0;
@@ -220,6 +221,12 @@
     @include phones {
         margin: 0 34%;
         margin-bottom: 2%;
+    }
+
+    @include iphoneX {
+        margin: 0 35%;
+        margin-bottom: 1%;
+        font-size: 15px;
     }
 
     @include iphone5 {
@@ -244,6 +251,7 @@
 
     &-cell {
         margin-right: 4rem;
+        color: #000;
 
         &:last-child {
             margin-right: 0;
@@ -273,6 +281,10 @@
     font-size: rem(60px);
     color: #151515;
     margin-right: 4rem;
+
+    @include iphoneX {
+        font-size: 2.933333rem;
+    }
 
     @include iphone5 {
         font-size: 2.333333rem;

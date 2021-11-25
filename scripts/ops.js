@@ -131,11 +131,12 @@
                 swipe: function (event, direction) {
                     const scroller = viewportScroller();
                     let scrollDirection = "";
-
                     if (direction === "up") scrollDirection = "next";
                     if (direction === "down") scrollDirection = "prev";
+                    if(scrollDirection !== ""){
+                        scroller[scrollDirection]();
 
-                    scroller[scrollDirection]();
+                    }
                 },
             });
         });

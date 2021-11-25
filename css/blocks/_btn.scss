@@ -17,8 +17,12 @@
     }
 
     @include phones {
-        font-size: 1.2em;
+        font-size: 1.2rem;
         margin-top: 0.7rem;
+    }
+
+    @include iphoneX {
+        font-size: 1rem;
     }
 
     @include iphone5 {

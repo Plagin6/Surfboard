@@ -14,6 +14,18 @@
     }
 }
 
+@mixin iphoneXr {
+    @media screen and (max-width: $iphoneXr) {
+        @content;
+    }
+}
+
+@mixin iphoneX {
+    @media screen and (max-width: $iphoneX) {
+        @content;
+    }
+}
+
 @mixin iphone5 {
     @media screen and (max-width: $iphone5) {
         @content;

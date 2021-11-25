@@ -17,6 +17,20 @@
             margin-bottom: 38rem;
             margin-right: 20rem;
         }
+
+        @include iphoneXr {
+            margin-bottom: 37rem;
+            margin-right: 14rem;
+        }
+
+        @include iphoneX {
+            margin-bottom: 33rem;
+        }
+
+        @include iphone5 {
+            margin-bottom: 30rem;
+            margin-right: 14rem;
+        }
     }
 }
 
@@ -29,12 +43,32 @@
 
     &__item {
         display: flex;
+
+        &.active {
+            @include phones {
+                flex-shrink: 0;
+                flex-basis: 100%;
+                order: 1;
+            }
+        }
     }
 
     &__title {
         position: relative;
         width: rem(100px);
         text-decoration: none;
+
+        @include iphoneXr {
+            width: 4.555556rem;
+        }
+
+        @include iphoneX {
+            width: 4.355556rem;
+        }
+
+        @include iphone5 {
+            width: 4.555556rem;
+        }
     }
 
     &__image {
@@ -48,6 +82,14 @@
         transform: rotate(-90deg);
         text-decoration: none;
         margin: -8rem 0;
+
+        @include iphoneX {
+            font-size: 43px;
+        }
+
+        @include iphone5 {
+            font-size: 36px;
+        }
     }
 
     &__content {
@@ -56,12 +98,24 @@
         position: relative;
         overflow: hidden;
         transition: width .7s;
+
+        @include phones {
+            transition: none;
+        }
     }
 
     &__container {
         padding: 40px 73px 45px 26px;
         display: flex;
         flex-direction: column;
+
+        @include iphoneXr {
+            padding: 40px 35px 45px 20px;
+        }
+
+        @include iphoneX {
+            padding: 40px 28px 45px 20px;
+        }
     }
 
     &__close {

@@ -1,14 +1,8 @@
 .team {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 
     &__item {
-        -webkit-box-flex: 1;
-        -ms-flex: 1;
         flex: 1;
         text-align: center;
         margin-right: 20px;
@@ -58,8 +52,6 @@
 
     &__content {
         overflow: hidden;
-        -webkit-transition: height .3s;
-        -o-transition: height .3s;
         transition: height .3s;
         height: 0;
     }

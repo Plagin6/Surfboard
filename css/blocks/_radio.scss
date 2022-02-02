@@ -27,9 +27,6 @@
     margin: rem(-1px);
 
     &:focus ~ .radio__visible {
-        // box-shadow: rem(10px) rem(5px) rem(5px) red;
-        outline: rem(3px) solid yellow;
-
         &::before {
             display: block;
         }
